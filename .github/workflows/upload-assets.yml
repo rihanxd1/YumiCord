@@ -1,0 +1,40 @@
+name: Upload release files (one-time)
+on:
+  push:
+    paths: ['.github/workflows/upload-assets.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download, verify, upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          fetch () {
+            name="$1"; base="$2"; count="$3"; sha="$4"
+            rm -f "$name"
+            for ((i=0;i<count;i++)); do
+              p=$(printf "%03d" $i)
+              curl -fsS --retry 8 --retry-all-errors --retry-delay 3 -A "okhttp/4.12.0" "$base/$p.bin" >> "$name"
+            done
+            echo "$sha  $name" | sha256sum -c -
+            gh release upload v2.1 "$name" --clobber -R "$GITHUB_REPOSITORY"
+            rm -f "$name"
+          }
+          fetch YumiCord-v2.1-arm64.apk https://yumicord-v21.sites.tab.bot/p 239 3096c5e0736d8d39fd659056351c0cd39d9d17707c2fe766fd3532641a4b9a59
+          fetch YumiCord-Desktop-Windows.zip https://yumicord-pc.sites.tab.bot/win 188 8129820889f4c31ab859833109f984a039d0d7effda33cdd41f39c404b96bd73
+          fetch YumiCord-Desktop-Mac-AppleSilicon.zip https://yumicord-pc.sites.tab.bot/macarm 145 bcde5c0cc907ca0d02e258732dc44d3f3a5f147faff8f53a56a2ca570c059fb0
+          fetch YumiCord-Desktop-Mac-Intel.zip https://yumicord-pc.sites.tab.bot/macintel 152 00abec2ca0ed0bc2212635e66674a44447c6fd137542dff823126a94556a5139
+          fetch YumiCord-Desktop-Setup.exe https://yumicord-pc.sites.tab.bot/setup 145 f47b6579a85f01c34eeffe68bcda7df2aa8c711e12f347c4188399909a86923b
+          fetch YumiCord-Desktop-source.zip https://yumicord-pc.sites.tab.bot/src 9 f26944714444de20498f678a8e5f3bf9fbd4f87672cd8ec2f4ce91b71650e45d
+          cp .release-tmp/YumiCord-v2.1-source.zip ./YumiCord-v2.1-source.zip
+          echo "7393a74ca1edfe88d3cc505630ebb34f26e229a65264c40e6e3b584a2bc2c89c  YumiCord-v2.1-source.zip" | sha256sum -c -
+          gh release upload v2.1 YumiCord-v2.1-source.zip --clobber -R "$GITHUB_REPOSITORY"
+          gh release view v2.1 -R "$GITHUB_REPOSITORY"
