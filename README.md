@@ -5,8 +5,8 @@
 <h1 align="center">YumiCord</h1>
 
 <p align="center">
-  <b>Discord ka apna version: built-in badges, 📱/🖥️/🌐 platform icons, aur bahut saare plugins jinhe bas ON karna hai.</b><br>
-  Phone (Android) · Windows · Mac — <b>koi code nahi, bas Download → Install.</b>
+  <b>A custom Discord client with built-in badges, 📱/🖥️/🌐 platform icons, and lots of plugins you just switch on.</b><br>
+  Phone (Android) · Windows · Mac — <b>no code, just Download → Install.</b>
 </p>
 
 ---
@@ -20,61 +20,61 @@
 | 🍎 **Mac (M1 / M2 / M3 / M4)** | **[⬇️ YumiCord-Desktop-Mac-AppleSilicon.zip](https://github.com/rihanxd1/YumiCord/releases/download/v2.1/YumiCord-Desktop-Mac-AppleSilicon.zip)** (123 MB) |
 | 🍎 **Mac (Intel)** | **[⬇️ YumiCord-Desktop-Mac-Intel.zip](https://github.com/rihanxd1/YumiCord/releases/download/v2.1/YumiCord-Desktop-Mac-Intel.zip)** (129 MB) |
 
-Saari files yahan bhi hain: **[Releases page → v2.1](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1)**
+All files are also here: **[Releases page → v2.1](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1)**
 
 ---
 
-## 📱 Phone (Android) pe install
+## 📱 Install on Phone (Android)
 
-1. Upar se **APK** download karo.
-2. File kholo → **Install** dabao. (Agar "Unknown apps" ka message aaye to us app ko allow kar do.)
-3. **Pehle se purana YumiCord hai?** Uninstall **mat** karo — seedha upar se install karo, **Update** aayega.
-4. Discord account se login karo.
-5. **Safe Mode OFF** rakhna. Plugins → jo chahiye use **ek-ek karke ON** karo.
+1. Download the **APK** above.
+2. Open the file → tap **Install**. (If you see an "Unknown apps" prompt, allow that app.)
+3. **Already have an older YumiCord?** Do **not** uninstall — install on top of it, it will **Update**.
+4. Log in with your Discord account.
+5. Keep **Safe Mode OFF**. In Plugins, turn on what you want **one at a time**.
 
-> Sirf **Android 64-bit (arm64)** phones ke liye. iPhone pe nahi chalega.
+> For **Android 64-bit (arm64)** phones only. Does not work on iPhone.
 
-## 🪟 Windows pe install
+## 🪟 Install on Windows
 
-1. **Windows zip** download karo.
-2. Zip pe **Right-click → Extract All**.
-3. Folder kholo → **YumiCord.exe** chalao.
-4. "Windows protected your PC" aaye to **More info → Run anyway**.
+1. Download the **Windows zip**.
+2. **Right-click** the zip → **Extract All**.
+3. Open the folder → run **YumiCord.exe**.
+4. If "Windows protected your PC" appears, click **More info → Run anyway**.
 
-> `YumiCord-Desktop-Setup.exe` installer bhi Releases mein hai, par wo abhi test nahi hua — **zip wala hi use karo**.
+> A `YumiCord-Desktop-Setup.exe` installer is also in Releases, but it is untested — **use the zip**.
 
-## 🍎 Mac pe install
+## 🍎 Install on Mac
 
-1. Apna Mac chuno: **M1/M2/M3/M4 = Apple Silicon**, purana Mac = **Intel**. (Pata karne ke liye:  → About This Mac)
-2. Zip download karo → double-click karke kholo.
-3. **YumiCord Desktop** app ko **Applications** folder mein drag karo.
-4. Pehli baar: app pe **Right-click → Open → Open**.
-   (Ya **System Settings → Privacy & Security → Open Anyway**.)
-5. Agar "app is damaged" aaye to Terminal mein ye ek line chalao:
+1. Pick your Mac: **M1/M2/M3/M4 = Apple Silicon**, older Macs = **Intel**. (Check via  → About This Mac)
+2. Download the zip → double-click to unzip.
+3. Drag **YumiCord Desktop** into the **Applications** folder.
+4. First launch: **Right-click the app → Open → Open**.
+   (Or **System Settings → Privacy & Security → Open Anyway**.)
+5. If it says "app is damaged", run this in Terminal:
    ```
    xattr -cr "/Applications/YumiCord Desktop.app"
    ```
 
 ---
 
-## ✨ Kya milta hai
+## ✨ Features
 
-- 🏅 **YumiCord Badges** — built-in, kuch install nahi karna
-- 📱🖥️🌐 **Platform icons** — naam ke paas dikhega koi phone/PC/browser pe hai
-- 🔌 **Bahut saare plugins pehle se** — sab OFF rehte hain, bas ON karo (deleted messages, free emoji, translate, hidden channels, etc.)
+- 🏅 **YumiCord Badges** — built in, nothing to install
+- 📱🖥️🌐 **Platform icons** — see if someone is on phone, PC or browser, right next to their name
+- 🔌 **Lots of plugins included** — all OFF by default, just switch them on (deleted messages, free emoji, translate, hidden channels and more)
 
-## ⚠️ Zaroori baat
+## ⚠️ Important
 
-YumiCord ek **community-made** client hai. Ye **official Discord nahi hai** aur Discord Inc. se iska koi lena-dena nahi hai. Apni marzi se use karo.
+YumiCord is a **community-made** client. It is **not official Discord** and is not affiliated with Discord Inc. Use at your own risk.
 
 ---
 
 ## 📜 Credits & Licenses
 
-- **Desktop app** — [Vesktop](https://github.com/Vencord/Vesktop) / [Vencord](https://github.com/Vendicated/Vencord) par based (GPL-3.0)
-- **Android** — [Revenge](https://github.com/revenge-mod) loader, [LSPatch](https://github.com/LSPosed/LSPatch) ke saath
-- **Platform indicators** — idea [martinz64 ka PlatformIndicators](https://github.com/martinz64/vendetta-plugins) (Unlicense)
-- Pre-installed plugins apne-apne authors ke hain; unka code badla nahi gaya, sirf links diye gaye hain.
-- **Source code:** `YumiCord-v2.1-source.zip` aur `YumiCord-Desktop-source.zip` — [Releases page](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1) mein.
+- **Desktop app** — [Vesktop](https://github.com/Vencord/Vesktop) / [Vencord](https://github.com/Vendicated/Vencord) based (GPL-3.0)
+- **Android** — [Revenge](https://github.com/revenge-mod) loader with [LSPatch](https://github.com/LSPosed/LSPatch)
+- **Platform indicators** — idea from [martinz64's PlatformIndicators](https://github.com/martinz64/vendetta-plugins) (Unlicense)
+- Pre-installed plugins belong to their own authors; their code is unmodified, only their links are included.
+- **Source code:** `YumiCord-v2.1-source.zip` and `YumiCord-Desktop-source.zip` on the [Releases page](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1).
 
 Discord is a trademark of Discord Inc. This project is not affiliated with or endorsed by Discord.
