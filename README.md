@@ -11,16 +11,18 @@
 
 ---
 
-## ⬇️ Download (v2.1)
+## ⬇️ Download (Phone v2.4 · PC v2.1)
 
 | Device | Download |
 |---|---|
-| 📱 **Android Phone** | **[⬇️ YumiCord-v2.1-arm64.apk](https://github.com/rihanxd1/YumiCord/releases/download/v2.1/YumiCord-v2.1-arm64.apk)** (202 MB) |
+| 📱 **Android Phone** | **[⬇️ YumiCord-v2.4-arm64.apk](https://github.com/rihanxd1/YumiCord/releases/download/v2.4/YumiCord-v2.4-arm64.apk)** (202 MB) — **v2.4** |
 | 🪟 **Windows** | **[⬇️ YumiCord-Desktop-Windows.zip](https://github.com/rihanxd1/YumiCord/releases/download/v2.1/YumiCord-Desktop-Windows.zip)** (160 MB) — recommended |
 | 🍎 **Mac (M1 / M2 / M3 / M4)** | **[⬇️ YumiCord-Desktop-Mac-AppleSilicon.zip](https://github.com/rihanxd1/YumiCord/releases/download/v2.1/YumiCord-Desktop-Mac-AppleSilicon.zip)** (123 MB) |
 | 🍎 **Mac (Intel)** | **[⬇️ YumiCord-Desktop-Mac-Intel.zip](https://github.com/rihanxd1/YumiCord/releases/download/v2.1/YumiCord-Desktop-Mac-Intel.zip)** (129 MB) |
 
-All files are also here: **[Releases page → v2.1](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1)**
+Phone (v2.4): **[Releases page → v2.4](https://github.com/rihanxd1/YumiCord/releases/tag/v2.4)** · Windows / Mac (v2.1): **[Releases page → v2.1](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1)**
+
+**New in v2.4 (phone):** Activity Status — whatever app or game you open shows on Discord as "Playing ..." to your friends, automatically.
 
 ---
 
@@ -75,6 +77,7 @@ YumiCord is a **community-made** client. It is **not official Discord** and is n
 - **Android** — [Revenge](https://github.com/revenge-mod) loader with [LSPatch](https://github.com/LSPosed/LSPatch)
 - **Platform indicators** — idea from [martinz64's PlatformIndicators](https://github.com/martinz64/vendetta-plugins) (Unlicense)
 - Pre-installed plugins belong to their own authors; their code is unmodified, only their links are included.
-- **Source code:** `YumiCord-v2.1-source.zip` and `YumiCord-Desktop-source.zip` on the [Releases page](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1).
+- **Activity Status** — activity detection based on [Kizzy](https://github.com/dead8309/Kizzy) by dead8309 (GPL-3.0)
+- **Source code:** `YumiCord-v2.4-source.zip` on the [v2.4 Releases page](https://github.com/rihanxd1/YumiCord/releases/tag/v2.4); `YumiCord-v2.1-source.zip` and `YumiCord-Desktop-source.zip` on the [v2.1 Releases page](https://github.com/rihanxd1/YumiCord/releases/tag/v2.1).
 
 Discord is a trademark of Discord Inc. This project is not affiliated with or endorsed by Discord.
